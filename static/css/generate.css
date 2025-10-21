@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  background: linear-gradient(135deg, #08001A, #130032, #20004B);
+  color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+/* Container box */
+.container {
+  background: rgba(25, 0, 50, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid rgba(0, 255, 255, 0.6);
+  text-shadow: 0 0 10px cyan;
+}
+/* Text input */
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ff00ff;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+/* Glow effect for progress bar */
+#progress-bar {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(255, 0, 255, 0.2);
+  border-radius: 8px;
+  color: #ff00ff;
+  text-shadow: 0 0 10px magenta;
+  animation: blinkingText 1.5s infinite;
+}
+/* Blinking effect for progress bar */
+@keyframes blinkingText {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+/* Cyberpunk glowing buttons */
+.glow-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px cyan, 0 0 40px magenta;
+}
+/* Glow effect on hover */
+.glow-button:hover {
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  box-shadow: 0 0 20px cyan, 0 0 50px magenta, 0 0 80px blue;
+  transform: scale(1.05);
+}
+/* Result container */
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+/* Generated image styling */
+#generated-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+}

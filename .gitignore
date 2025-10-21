@@ -1,0 +1,31 @@
+# Virtual Environment (adjust to match YOUR folder name)
+myenv/
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.Python
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated images (optional)
+static/uploads/*.png
+static/uploads/*.jpg

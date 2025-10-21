@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, #08001A, #130032, #20004B);
+    color: #0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+/* Cyberpunk Grid Overlay */
+.cyber-grid {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0px, rgba(0, 255, 255, 0.1) 2px, transparent 2px, transparent 40px),
+repeating-linear-gradient(0deg, rgba(255, 0, 255, 0.1) 0px, rgba(255, 0, 255, 0.1) 2px, transparent 2px, transparent 40px);
+    opacity: 0.2;
+    z-index: -1;
+}
+.container {
+    background: rgba(20, 0, 50, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    text-shadow: 0 0 10px cyan;
+}
+/* Glowing button */
+.glow-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px cyan, 0 0 40px magenta;
+}
+/* Glowing button hover effect */
+.glow-button:hover {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 20px cyan, 0 0 50px magenta, 0 0 80px blue;
+    transform: scale(1.05);
+}
+
